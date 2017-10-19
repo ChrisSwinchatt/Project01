@@ -52,11 +52,19 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" keyboardAppearance="light" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eis-uw-23d">
-                                <rect key="frame" x="107" y="194" width="161" height="30"/>
+                                <rect key="frame" x="44" y="194" width="125" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Find Specified Location"/>
+                                <state key="normal" title="Find Location"/>
                                 <connections>
                                     <action selector="ClickedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fho-Ch-9dY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37b-HN-HT9">
+                                <rect key="frame" x="223" y="194" width="88" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="My Location"/>
+                                <connections>
+                                    <action selector="MyLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9mh-ze-PKX"/>
                                 </connections>
                             </button>
                         </subviews>
