@@ -71,6 +71,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     @IBAction func MyLocation(_ sender: UIButton) {
+        self.view.endEditing(true);
         manager.startUpdatingLocation()
     }
     
