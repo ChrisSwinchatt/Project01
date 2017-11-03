@@ -1,3 +1,4 @@
+*~
 *.iml
 .gradle
 /local.properties
@@ -9,3 +10,6 @@
 /captures
 .externalNativeBuild
 node_modules
+server.db
+server.log
+server.tar
