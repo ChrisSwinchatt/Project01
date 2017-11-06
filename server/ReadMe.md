@@ -22,12 +22,17 @@ The server uses a HATEOAS-like API with data transferred in JSON format.
 
 The endpoints currently defined are:
 
-rel             | href               | methods | Effect
---------------- | ------------------ | --------| --
-`index`         | `/`                | `GET`   | Get a list of available endpoints
-`get-location`  | `/location`        | `POST`  | Get the most recent location of the client if any
-`set-location`  | `/location/update` | `POST`  | Update the client's location
-`list-location` | `/location/list`   | `POST`  | Nothing - not implemented.
+rel              | href                  | methods | Effect
+---------------- | --------------------- | --------| --
+`index`          | `/`                   | `GET`   | Get a list of available endpoints
+`get-location`   | `/location`           | `POST`  | Get the most recent location of the client if any
+`set-location`   | `/location/update`    | `POST`  | Update the client's location
+`list-location`  | `/location/list`      | `POST`  | Nothing - not implemented.
+`get-postcode`   | `/location/postcode`  | `POST`  | Get the post code a location falls within
+`get-price`      | `/price`              | `POST`  | Get the price a house was sold for if available
+`map-price`      | `/price/map`          | `POST`  | Get a mapping of longitude/latitude to price within a radius
+`postcode-price` | `/price/map/postcode` | `POST`  | Get a mapping of longitude/latitude to price within a postal area
+``
 
  * Each endpoint responds only to the method listed in the table.
  * The reason for the `rel` column will become clear in the `Responses` section.
